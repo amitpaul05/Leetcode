@@ -1,8 +1,6 @@
 class Solution:
     def predictPartyVictory(self, senate: str) -> str:
         n = len(senate)
-        # r_q = []
-        # d_q = []
 
         r_q = [i for i in range(len(senate)) if senate[i]=='R']
         d_q = [j for j in range(len(senate)) if senate[j]=='D']
