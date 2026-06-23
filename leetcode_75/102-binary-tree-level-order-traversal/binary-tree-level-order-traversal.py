@@ -9,7 +9,7 @@ class Solution:
         level_vals = []
         if root:
             q = deque([root])
-            l = 1
+
             while q:
                 l_size = len(q)
                 current_level_vals = []
@@ -20,7 +20,6 @@ class Solution:
                         q.append(current.left)
                     if current.right:
                         q.append(current.right)
-                    # print(current.val, l)
-                l += 1
+
                 level_vals.append(current_level_vals)
         return level_vals
